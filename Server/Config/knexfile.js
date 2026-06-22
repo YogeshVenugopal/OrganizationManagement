@@ -1,9 +1,10 @@
 import dotenv from 'dotenv';
-dotenv.config({path : "./.env"});
+dotenv.config({path : "../.env"});
 
 /** @type { Object.<string, import("knex").Knex.Config> } */
-const config = {
+  console.log("DB Connection String:", process.env.DB_PASSWORD);
 
+const config = {
   development: {
     client: 'pg',
     connection: {
